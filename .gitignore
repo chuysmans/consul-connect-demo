@@ -14,3 +14,4 @@ terraform.auto.tfvars
 # Include binaries folder
 !packer/binaries/.gitkeep
 terraform/gcp/.terraform
+terraform/aws/single-region-demo/.tfswitchrc
