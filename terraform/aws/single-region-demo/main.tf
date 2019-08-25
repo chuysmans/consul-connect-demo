@@ -2,17 +2,17 @@
 
 # Create Consult Connect demo cluster
 module "cluster_main" {
-  source = "../modules/consul-demo-cluster"
+  source        = "../modules/consul-demo-cluster"
   aws_region    = "${var.aws_region}"
   consul_dc     = "${var.consul_dc}"
   consul_acl_dc = "${var.consul_dc}"
 
   project_name     = "${var.project_name}"
   top_level_domain = "${var.top_level_domain}"
-  route53_zone_id = "${var.route53_zone_id}"
-  ssh_key_name    = "${var.ssh_key_name}"
-  consul_lic      = "${var.consul_lic}"
-  hashi_tags = "${var.hashi_tags}"
+  route53_zone_id  = "${var.route53_zone_id}"
+  ssh_key_name     = "${var.ssh_key_name}"
+  consul_lic       = "${var.consul_lic}"
+  hashi_tags       = "${var.hashi_tags}"
 }
 
 # Configure Prepared Query on Main Consul Cluster
@@ -26,7 +26,7 @@ resource "consul_prepared_query" "product_service" {
   name         = "product"
   only_passing = true
   connect      = true
-  service = "product"
+  service      = "product"
 
   failover {
     datacenters = ["${module.cluster_main.consul_dc}"]
