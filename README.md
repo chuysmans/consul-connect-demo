@@ -27,3 +27,14 @@ You will need AWS credentials, set your credentials appropriately <https://www.t
 - Do the normal `terraform init`, `terraform plan`, `terraform apply` dance
 
 *Note*: It takes a couple minutes for everything to spin up and be reachable after Terraform is done, until then the `web_client` will show some errors connecting to backend services. Just wait. 
+
+steps:
+1. describe the demo setup, a 3 tier application with web/api/db tiers.
+2. open dc1 webclient
+3. open dc2 webclient, talk about the difference in contents.
+4. open consul UI, do normal service discovery/registration/connect talks.
+5. login into one listing API box run steps in home dir.
+6. login into one webclient box and run steps in home dir.
+7. change of KV product/run to false to stop product API, and see the automagic failover happens.
+8. create intentions to deny everything, see the webapp fail, then add back one by one to see the effect.
+
