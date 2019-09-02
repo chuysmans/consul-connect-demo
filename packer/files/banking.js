@@ -1,0 +1,3 @@
+use bbthe90s
+db.products.insertMany([ { 'inv_id': 1, 'name':'Fixed Rate Business Loan', 'cost':35.57, 'img':null}, { 'inv_id': 2, 'name':'Variable Rate Business Loan', 'cost':22.50, 'img':null}, { 'inv_id': 3, 'name':'Business Maxmizer', 'cost':12.37, 'img':null}, { 'inv_id': 4, 'name':'Bank Bills', 'cost':17.95, 'img':null}])
+db.listings.insertMany([ { 'listing_id': 1, 'name':'Basic Home Loan', 'reserve':12.95, current_bid: 3.43, 'img':null}, { 'listing_id': 2, 'name':'Standard Variable Home Loan', 'reserve':35.57, current_bid: 23.43, 'img':null}, { 'listing_id': 3, 'name':'Fixed Rate Home Loan', 'reserve':35.57, current_bid: 23.43, 'img':null}, { 'listing_id': 4, 'name':'Advanced Package', 'reserve':35.57, current_bid: 23.43, 'img':null}])
