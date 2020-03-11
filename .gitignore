@@ -1,11 +1,11 @@
 *~
 *.DS_Store
-packer/binaries/*
-packer/files/encrypt.hcl
 packer/.built*
 env.sh
-terraform/gcp/terraform.tf*
-
-# Include binaries folder
-!packer/binaries/.gitkeep
-terraform/gcp/.terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+tf.plan
+terraform.auto.tfvars
+remote.tf*
+setup-tfe.sh
