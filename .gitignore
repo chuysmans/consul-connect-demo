@@ -9,3 +9,5 @@ terraform/gcp/terraform.tf*
 # Include binaries folder
 !packer/binaries/.gitkeep
 terraform/gcp/.terraform
+
+/reference/setup-tfe.sh
