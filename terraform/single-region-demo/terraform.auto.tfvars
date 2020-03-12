@@ -5,25 +5,25 @@
 # cloud auto-join uses 'cluster name'
 
 # Unique Project Name
-project_name = "rpeteuil-consul-demo"
+project_name = "cameron-huysmans-cc-demo"
 
 hashi_tags = {
-  "project" = "RPeteuil Consul Demo"
-  "owner"   = "rpeteuil@hashicorp.com"
-  "TTL"     = "6"
+  "project" = "Cameron Consul Demo"
+  "owner"   = "cameron@hashicorp.com"
+  "TTL"     = "48"
 }
 
 # zone ID for TLD (ex: zone id for hashidemos.io)
-route53_zone_id = "ZZZZZZZZZZZZZZ"
+route53_zone_id = "Z2VHBDUP4PWKRK"
 
 # TLD to register nodes and lb in
 top_level_domain = "test.example.com"
 
 # AWS Keypair in Region - specifies key used when sshing to instance
 #   https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
-ssh_key_name = "rpeteuil"
+ssh_key_name = "camhuysmans"
 
-### CONSUL LICENSE KEY - HIGHLY RECOMMENDED 
+### CONSUL LICENSE KEY - HIGHLY RECOMMENDED
 
 # Consul Enterprise License Key
 # consul_lic = "consul-enterprise-license-string-here"
@@ -33,7 +33,7 @@ ssh_key_name = "rpeteuil"
 #   To repair demo environment after shutdown
 #     Reboot or restart the consul service on each host (including clients)
 
-### OPTIONAL 
+### OPTIONAL
 
 # Consul Cluster region and DC Name
 # aws_region = "us-west-2"
