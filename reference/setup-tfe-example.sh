@@ -33,6 +33,13 @@ CONSUL_ENT_LICENSE=""                 # HIGHLY RECOMMENDED
 # To repair demo environment after shutdown
 #   Reboot or restart the consul service on each host (including clients)
 
+# Might need these set here if you don't have them in your current ENV 
+AWS_ACCESS_KEY_ID="AK7ZPULHP"
+AWS_SECRET_ACCESS_KEY="UxW/rWq6"
+AWS_DEFAULT_REGION="ap-southeast-2"
+
+
+
 
 ### INTERNAL VARIABLES
 TF_VER="0.11.14"
